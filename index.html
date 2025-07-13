@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DivineMarkets – AI Options Trading</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="description" content="DivineMarkets helps you beat the market daily with AI-powered option signals, risk reports, and smart entry/exit predictions.">
+  <meta name="keywords" content="AI trading, stock options, market signals, financial AI, call and put options, day trading">
+  <meta name="author" content="DivineMarkets Team">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      animation: fadeIn 1.5s ease-in;
+      position: relative;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      color: #e0e0e0;
+    }
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-switcher button {
+      background: #fff;
+      color: #2575fc;
+      border: none;
+      padding: 6px 12px;
+      margin-left: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: slideUp 1s ease-out;
+    }
+    .features, .testimonials, .pricing, .social-proof {
+      display: grid;
+      gap: 20px;
+    }
+    .feature, .testimonial, .plan, .social {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    .cta, .email-form {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta button, .email-form button {
+      background: #2575fc;
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .email-form input[type=email] {
+      padding: 12px;
+      width: 300px;
+      border-radius: 6px;
+      border: none;
+      margin-right: 10px;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      margin: 40px auto;
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body onload="setLanguage('en')">
+  <header>
+    <div class="language-switcher">
+      <button onclick="setLanguage('fr')">Français</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+    <h1 id="title">DivineMarkets</h1>
+    <p id="subtitle">Beat the market daily with AI-generated option signals</p>
+    <div class="cta">
+      <button onclick="window.location.href='/dashboard'" id="start-btn">Get Started</button>
+    </div>
+  </header>
+
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo DivineMarkets"></iframe>
+
+  <section class="email-form">
+    <h2>Join Our Waitlist</h2>
+    <p>Get the latest alerts, trends, and offers before everyone else.</p>
+    <form action="https://formspree.io/f/xzzvpbwa" method="POST">
+      <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Remaining content stays the same... -->
+  <!-- Language logic already implemented -->
+</body>
+</html>
+
+

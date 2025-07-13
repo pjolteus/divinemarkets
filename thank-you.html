@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – DivineMarkets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      color: #4ade80;
+      animation: fadeIn 1s ease-out;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+      color: #d1d5db;
+    }
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-switcher button {
+      background: #fff;
+      color: #2563eb;
+      border: none;
+      padding: 6px 12px;
+      margin-left: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    a {
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    a:hover {
+      background: #1e40af;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('fr')">Français</button>
+  </div>
+
+  <h1 id="thanks">Thank You!</h1>
+  <p id="message">You’ve been added to the DivineMarkets waitlist. We’ll keep you updated with exclusive news and alerts!</p>
+  <a id="home-link" href="/">← Back to Home</a>
+
+  <script>
+    function setLanguage(lang) {
+      const content = {
+        en: {
+          thanks: "Thank You!",
+          message: "You’ve been added to the DivineMarkets waitlist. We’ll keep you updated with exclusive news and alerts!",
+          home: "← Back to Home"
+        },
+        fr: {
+          thanks: "Merci !",
+          message: "Vous avez été ajouté à la liste d'attente de DivineMarkets. Nous vous tiendrons informé des actualités et alertes exclusives !",
+          home: "← Retour à l'accueil"
+        }
+      };
+      document.getElementById("thanks").textContent = content[lang].thanks;
+      document.getElementById("message").textContent = content[lang].message;
+      document.getElementById("home-link").textContent = content[lang].home;
+    }
+    setLanguage('en');
+  </script>
+</body>
+</html>
